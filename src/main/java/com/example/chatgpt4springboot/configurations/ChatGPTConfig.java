@@ -2,11 +2,13 @@ package com.example.chatgpt4springboot.configurations;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+@Configuration
 public class ChatGPTConfig {
 
-    @Value("${openAi.chatGPT.api.key}")
+    @Value("${openAI.chatGPT.api.key}")
     private String openaiApiKey;
 
     @Bean
